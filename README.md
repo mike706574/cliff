@@ -2,6 +2,8 @@
 
 CLI boilerplate.
 
+The thing with the atom is gross, but I *think* I did it for a reason...
+
 
 ## Copyright and License
 
