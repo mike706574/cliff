@@ -58,7 +58,7 @@
                              (cmd-usage cmd-id spec)
                              (cmd-rejection cmd-id)))]
             (cond
-              (not (empty? errors)) (println (str (str/join \newline errors) "\n\n" usage))
+              (not (empty? errors)) (println (str (str/join \newline errors) "\n\n" (usage opts)))
               (empty? arguments) (println (help label cmds opts))
               (:help options) (println (if (empty? arguments)
                                          help
