@@ -1,4 +1,4 @@
-(defproject fun.mike/cliff-alpha "0.0.2-SNAPSHOT"
+(defproject fun.mike/cliff-alpha "0.0.2"
   :description "CLI boilerplate."
   :url "https://github.com/mike706574/cliff"
   :license {:name "Eclipse Public License"
