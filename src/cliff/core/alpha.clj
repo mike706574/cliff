@@ -1,4 +1,4 @@
-(ns cliff.alpha.core
+(ns cliff.core.alpha
   (:require [clojure.pprint :refer [pprint]]
             [clojure.string :as str]
             [clojure.tools.cli :as cli]
