@@ -61,10 +61,10 @@
               (not (empty? errors)) (println (str (str/join \newline errors) "\n\n" (usage opts)))
               (empty? arguments) (println (help label cmds opts))
               (:help options) (println (if (empty? arguments)
-                                         help
+                                         (help label cmds opts)
                                          (cmd-help (first arguments))))
               (= "help" (first arguments)) (println (if (= 1 (count arguments))
-                                                      help
+                                                      (help label cmds opts)
                                                       (cmd-help (second arguments))))
               :else (let [[cmd-id & cmd-args] arguments]
                       (if-let [spec (get cmds cmd-id)]
